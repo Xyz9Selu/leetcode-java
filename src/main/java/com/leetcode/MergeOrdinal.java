@@ -1,5 +1,6 @@
 package com.leetcode;
 
+// 1768. Merge Strings Alternately
 public class MergeOrdinal {
     // This method is a placeholder for the solution to a LeetCode problem.
     public String mergeAlternately(String word1, String word2) {

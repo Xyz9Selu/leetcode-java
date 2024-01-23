@@ -9,8 +9,8 @@ public class MergeAlternatelyTest {
     @Test
     public void testAdd() {
         MergeAlternately solution = new MergeAlternately();
-        assertEquals(solution.fmergeAlternately("abc", "pqr"), "apbqcr");
-        assertEquals(solution.fmergeAlternately("ab", "pqrs"), "apbqrs");
-        assertEquals(solution.fmergeAlternately("abcd", "pq"), "apbqcd");
+        assertEquals("apbqcr", solution.fmergeAlternately("abc", "pqr"));
+        assertEquals("apbqrs", solution.fmergeAlternately("ab", "pqrs"));
+        assertEquals("apbqcd", solution.fmergeAlternately("abcd", "pq"));
     }
 }

@@ -22,7 +22,7 @@ public class MergeAlternately {
         return sb.toString();
     }
 
-    public static String fmergeAlternately(String word1, String word2) {
+    public String fmergeAlternately(String word1, String word2) {
         int len1 = word1.length();
         int len2 = word2.length();
         char[] s1 = word1.toCharArray();
