@@ -1,7 +1,7 @@
-package com.leetcode;
+package com.leetcode.s1071_string_gcd;
 
 // 1071. Greatest Common Divisor of Strings
-public class StringGCD {
+public class Solution {
     private int gcd(int a, int b) {
         while (b != 0) {
             int temp = b;

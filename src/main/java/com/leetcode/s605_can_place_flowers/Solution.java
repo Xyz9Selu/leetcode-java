@@ -1,7 +1,7 @@
-package com.leetcode;
+package com.leetcode.s605_can_place_flowers;
 
 // 605. Can Place Flowers
-class CanPlaceFlowers {
+class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         for (int i = 0; i < flowerbed.length && n > 0; i ++) {
             if (flowerbed[i] == 0 && 

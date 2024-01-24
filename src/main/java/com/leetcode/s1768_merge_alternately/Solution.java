@@ -1,6 +1,6 @@
-package com.leetcode;
+package com.leetcode.s1768_merge_alternately;
 
-public class MergeAlternately {
+public class Solution {
     // This method is a placeholder for the solution to a LeetCode problem.
     public String mergeAlternately(String word1, String word2) {
         int wi1 = 0;
