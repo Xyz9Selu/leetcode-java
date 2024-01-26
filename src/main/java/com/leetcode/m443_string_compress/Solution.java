@@ -16,12 +16,26 @@ public class Solution {
 
             // write count if > 1
             if (count > 1) {
-                for (char nc : String.valueOf(count).toCharArray()) {
-                    chars[iw++] = nc;
+                int cnt = count;
+                int st = iw;
+                
+                while (cnt > 0) {
+                    chars[iw++] = (char) ('0' + cnt % 10);
+                    cnt /= 10;
                 }
+                
+                reverse(chars, st, iw - 1);
             }
         }
 
         return iw;
+    }
+
+    private void reverse(char[] chars, int start, int end) {
+        while (start < end) {
+            char tmp = chars[start];
+            chars[start++] = chars[end];
+            chars[end--] = tmp;
+        }
     }
 }
