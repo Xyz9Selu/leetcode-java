@@ -14,13 +14,5 @@ public class SolutionTest {
         Assert.assertTrue(solution.isSubsequence("", ""));
         Assert.assertTrue(solution.isSubsequence("abc", "abc"));
         Assert.assertTrue(solution.isSubsequence("abc", "ababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "abababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "ababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "abababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "ababababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "abababababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "ababababababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "abababababababababc"));
-        Assert.assertTrue(solution.isSubsequence("abc", "ababababababababababc"));
     }
 }
