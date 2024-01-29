@@ -1,9 +1,5 @@
 package com.leetcode.m1456_max_vowels;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 class Solution {
     static final int[] vowels = new int[26];
     static {
