@@ -11,7 +11,6 @@ class Solution {
             if (nums[right] == 0) {
                 zeroCount ++;
             }
-
             while (zeroCount > 1) {
                 if (nums[left] == 0) {
                     zeroCount --;
