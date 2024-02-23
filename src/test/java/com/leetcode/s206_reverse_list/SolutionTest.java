@@ -44,4 +44,5 @@ public class SolutionTest {
         Assert.assertEquals(Arrays.asList(2, 1), toList(solution.reverseList2(toListNode(Arrays.asList(1, 2)))));
         Assert.assertEquals(Arrays.asList(), toList(solution.reverseList2(toListNode(Arrays.asList()))));
     }
+
 }

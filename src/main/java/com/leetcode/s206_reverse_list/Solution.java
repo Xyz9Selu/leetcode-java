@@ -26,15 +26,19 @@ class Solution {
     }
 
     public ListNode reverseList2(ListNode head) {
+        // return if is last or is empty
         if (head == null || head.next == null) {
             return head;
         }
 
+        // reverse next
         ListNode newHead = reverseList2(head.next);
 
+        // reverse current head and next
         head.next.next = head;
         head.next = null;
 
         return newHead;
     }
+
 }
