@@ -1,11 +1,7 @@
 package com.leetcode.s206_reverse_list;
 
 import org.junit.Test;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-
 import org.junit.Assert;
 
 public class SolutionTest {

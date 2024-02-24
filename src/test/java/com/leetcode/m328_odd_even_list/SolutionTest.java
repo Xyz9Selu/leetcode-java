@@ -2,8 +2,6 @@ package com.leetcode.m328_odd_even_list;
 
 import org.junit.Test;
 import org.junit.Assert;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SolutionTest {
