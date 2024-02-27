@@ -31,4 +31,20 @@ class Solution {
             longestZigZag(root.left, left? 0: count + 1, true), 
             longestZigZag(root.right, left? count + 1: 0, false));
     }
+
+    public int longestZigZagWrong(TreeNode root) {
+        return Math.max(
+            longestZigZagWrong(root.left, true), 
+            longestZigZagWrong(root.right, false));
+    }
+
+    private int longestZigZagWrong(TreeNode root, boolean left) {
+        if (root == null) {
+            return 0;
+        }
+
+        return Math.max(
+            longestZigZagWrong(root.left, true) + (left? 0: 1), 
+            longestZigZagWrong(root.right, false) + (left? 1: 0));
+    }
 }
