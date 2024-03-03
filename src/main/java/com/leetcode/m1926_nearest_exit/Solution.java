@@ -18,21 +18,22 @@ class Solution {
         while (!queue.isEmpty()) {
             int[] curr = queue.poll();
 
-            // tell is exit
-            if ((curr[0] == 0 || curr[1] == 0 || curr[0] == xSize - 1 || curr[1] == ySize - 1) && (curr[0] != entrance[0] || curr[1] != entrance[1])) {
-                return curr[2];
-            }
-
             // test 4 directions
             for (int[] direction: directions) {
                 int newX = curr[0] + direction[0];
                 int newY = curr[1] + direction[1];
                 int newStep = curr[2] + 1;
 
-                if (0 <= newX && newX < xSize && 0 <= newY && newY < ySize && !visited[newX][newY] && maze[newX][newY] != '+') {
-                    queue.offer(new int[]{newX, newY, newStep});
-                    visited[newX][newY] = true;
+                if (newX < 0 || newX >= xSize || newY < 0 || newY >= ySize || visited[newX][newY] || maze[newX][newY] == '+') {
+                    continue;
                 }
+
+                if (newX == 0 || newX == xSize - 1 || newY == 0 || newY == ySize - 1) {
+                    return newStep;
+                }
+
+                queue.offer(new int[]{newX, newY, newStep});
+                visited[newX][newY] = true;
             }
         }
 
